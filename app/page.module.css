@@ -1,0 +1,302 @@
+/* Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a365d;
+  padding: 10px 30px;
+}
+
+/* Left: Logo */
+.leftSection {
+  flex-shrink: 0;
+}
+
+/* Center: Navigation Links */
+.centerNav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.centerNav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.centerNav a:hover {
+  color: #f7931e;
+}
+
+/* Right: Search + Cart */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+/* Search bar */
+.searchContainer {
+  position: relative;
+  display:flex;
+  align-items:center;
+}
+
+.searchInput {
+  padding: 8px 12px 8px 80px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 300px;
+  background-color:#fff;
+  color: black;
+  
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Cart */
+.cart {
+  position: relative;
+  width: 52%;
+}
+
+.cartCount {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #f7931e;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+.main {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #0339ce;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #f7931e;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 40px;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #4a5568;
+}
+
+
+.hero button:hover {
+  background-color: #dd7f12; 
+}
+
+.engagements {
+  padding: 2rem 1rem;
+  background-color: #f9fafb; /* subtle light background */
+}
+
+.engagementsList {
+  display: flex;
+  justify-content: center; /* center cards horizontally */
+  gap: 7rem; /* spacing between cards */
+  flex-wrap: nowrap; /* prevent wrapping, or change to wrap if needed */
+}
+
+.engagementCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+  background-color: #1a365d;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px#cf9048;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.engagementCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #dd7f12;
+}
+
+.engagementCard h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: white; /* navy blue to match your palette */
+  font-weight: 600;
+}
+
+.engagementCard p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #9bb2c4;
+  line-height: 1.4;
+}
+.helpSection {
+  background-color:  #1a365d; /* light gray background */
+  padding: 3.75rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.958);
+  margin: 2rem auto;
+  max-width: 10000px;
+  
+
+}
+
+.helpSection h2 {
+  color: #f1f5f9; /* GPA navy */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.helpSection p {
+  color: #9ca2aa; /* dark gray */
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.ctaGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  background-color: #f7931e; /* GPA orange */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #d97706; /* darker orange on hover */
+}
+
+.ctaDisabled {
+  background-color: #e2e8f0; /* grayish */
+  color: #94a3b8; /* light gray text */
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: not-allowed;
+}
+.helpSection {
+  border: 50px solid white;
+ outline: 50px solid white;
+}
+.footer {
+  background-color: #1a365d; /* Navy background */
+  color: white;
+  padding: 3rem 2rem 2rem;
+  font-size: 0.95rem;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerColumn {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footerColumn h4 {
+  color: #f7931e; /* Orange titles */
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footerColumn p,
+.footerColumn li {
+  margin-bottom: 0.5rem;
+  color: #e2e8f0; /* light gray text */
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footerColumn li:hover {
+  color: #f7931e; /* Orange on hover */
+}
+
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid #334155; /* dark gray line */
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: #94a3b8; /* gray text */
+  font-size: 0.85rem;
+}
+
+
