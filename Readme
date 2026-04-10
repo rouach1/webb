@@ -1,0 +1,22 @@
+ GPA - Truck Parts E-commerce Website
+
+This project is a modern e-commerce web application for selling truck parts
+It was built as part of my learning journey in web development using Next.js and React
+
+ Features:
+-  Shopping cart with quantity management
+-  Product filtering (category, price, stock)
+-  Stock status (In stock / Out of stock)
+
+used:
+- Next.js
+- React
+- Tailwind CSS
+
+
+(Add screenshots here)
+
+--------------------------------------------------------------------------
+```bash
+npm install
+npm run dev
